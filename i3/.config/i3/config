@@ -38,6 +38,7 @@ set $mod Mod4
 exec --no-startup-id bash -c 'IMAGE=$(/usr/bin/find /home/consigliere/Pictures/wallpapers -type f | /usr/bin/shuf -n 1); /usr/bin/feh --bg-fill "$IMAGE"; /usr/bin/wal -i "$IMAGE"'
 #(above) canvia colors de terminal automàticament quan es canvia wallpaper. Es canvien aleatòriament wallpapers dins la carpeta
 exec_always --no-startup-id picom --config /home/consigliere/.config/picom/picom.conf
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #touchpad speed
 exec_always --no-startup-id xinput set-prop "ELAN0722:00 04F3:3139 Touchpad" "libinput Accel Speed" 0.7
@@ -544,7 +545,7 @@ client.unfocused #4c566a        #2e3440       #888888       #4c566a       #2e344
 ############################################
 # bar settings (polybar, personal addition)
 ############################################
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 
 ############################################
