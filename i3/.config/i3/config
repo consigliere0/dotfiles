@@ -356,13 +356,13 @@ set $ws10 "10"
 
 # bind program to workspace and focus to them on startup:
 #assign [class="Xfce4-terminal"] $ws1
-assign [class="Kitty"] $ws1
-assign [class="(?i)firefox"] $ws2
-assign [class="Thunar"] $ws4
+#assign [class="Kitty"] $ws1
+#assign [class="(?i)firefox"] $ws2
+#assign [class="Thunar"] $ws4
 #assign [title="Tauler | CAMPUS VIRTUAL UPC — Mozilla Firefox"] $ws3
-for_window [title="Tauler | CAMPUS VIRTUAL UPC"] move container to workspace $ws3
+#for_window [title="Tauler | CAMPUS VIRTUAL UPC"] move container to workspace $ws3
 
-for_window [class="kitty"] move to workspace $ws1, workspace $ws1
+#for_window [class="kitty"] move to workspace $ws1, workspace $ws1
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=kitty] focus
